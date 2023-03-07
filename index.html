@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="wrapper">
+            <div class="header">
+                <h1>코드캠프 Base.Camp</h1>
+            </div>
+            <div class="body">
+                <div class="d-day">
+                    <div class="d-day-title">
+                        <h2>D-Day</h2>
+                    </div>
+                    <div id="d-day-container">
+                        <div class="d-day-child-container">
+                            <span id="days">0</span>
+                            <span>일</span>
+                        </div>
+                        <div class="d-day-child-container">
+                            <span id="hours">0</span>
+                            <span>시간</span>
+                        </div>
+                        <div class="d-day-child-container">
+                            <span id="min">0</span>
+                            <span>분</span>
+                        </div>
+                        <div class="d-day-child-container">
+                            <span id="sec">0</span>
+                            <span>초</span>
+                        </div>
+                    </div>
+                    <div id="d-day-message"></div>
+                    <div id="target-selector id">
+                        <input type="text" maxlength="4" id="target-year-input" oninput="changeFocus1()"
+                            class="target-input" size="5" />
+                        -
+                        <input type="text" maxlength="2" id="target-month-input" oninput="changeFocus2()"
+                            class="target-input" size="5" />
+                        -
+                        <input type="text" maxlength="2" id="target-date-input" class="target-input" size="5" />
+                    </div>
+                    <button onclick="starter()" class="btn">카운트다운 시작</button>
+                    <button onclick="resetTimer()" class="btn">타이머 초기화</button>
+                </div>
+                <div class="todo">
+                    <div id="toto-title">
+                        <h2>ToDo-List</h2>
+                    </div>
+                    <div class="todo-container">
+                        <input type="text" id="todo-input" onkeydown="keyCodeCheck()" />
+                        <ul id="todo-list">
+                        </ul>
+                    </div>
+                    <div class="delete-btn-warper">
+                        <button onclick="deleteAll()" id="list-btn">리스트 삭제</button>
+                    </div>
+                </div>
+            </div>
+            <button class="last-btn">전체 초기화</button>
+        </div>
+    </div>
+</body>
+
+</html>

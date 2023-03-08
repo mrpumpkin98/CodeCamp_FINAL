@@ -86,6 +86,7 @@ body {
 
 #d-day-container {
     display: flex;
+    color: #0068FF;
 }
 
 .d-day-child-container {
